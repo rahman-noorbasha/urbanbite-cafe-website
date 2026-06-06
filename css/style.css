@@ -468,3 +468,140 @@ h2 {
     padding: 45px 22px;
   }
 }
+.contact-info-card {
+  background: #fff;
+  padding: 35px 25px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+  height: 100%;
+  transition: 0.3s;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-8px);
+}
+
+.contact-info-card i {
+  width: 70px;
+  height: 70px;
+  background: var(--light);
+  color: var(--brand);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact-info-card h5 {
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.contact-info-card p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.contact-form-box,
+.opening-hours-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 28px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+  height: 100%;
+}
+
+.form-control {
+  height: 54px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  padding: 12px 16px;
+}
+
+textarea.form-control {
+  height: auto;
+}
+
+.form-control:focus {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 0.2rem rgba(232, 93, 4, 0.15);
+}
+
+.hours-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.hours-item span {
+  color: var(--muted);
+}
+
+.hours-item strong {
+  color: var(--dark);
+  text-align: right;
+}
+
+.contact-whatsapp-box {
+  margin-top: 30px;
+  background: var(--light);
+  padding: 24px;
+  border-radius: 22px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.contact-whatsapp-box i {
+  width: 55px;
+  height: 55px;
+  background: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+.contact-whatsapp-box h5 {
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.contact-whatsapp-box p {
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.contact-whatsapp-box a {
+  color: var(--brand);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.map-section iframe {
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .contact-form-box,
+  .opening-hours-box {
+    padding: 28px 22px;
+  }
+
+  .hours-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .hours-item strong {
+    text-align: left;
+  }
+}
