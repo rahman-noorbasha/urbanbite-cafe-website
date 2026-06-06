@@ -263,4 +263,53 @@ h2 {
   .btn-lg {
     font-size: 16px;
   }
+}.page-header {
+  background: linear-gradient(135deg, #fff7ed, #ffffff);
+  padding: 150px 0 90px;
 }
+
+.page-header h1 {
+  font-size: 48px;
+  font-weight: 800;
+  max-width: 850px;
+  margin: 0 auto 18px;
+}
+
+.page-header p {
+  color: var(--muted);
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.stats-box {
+  background: #fff;
+  padding: 35px 20px;
+  border-radius: 22px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+  height: 100%;
+}
+
+.stats-box h3 {
+  color: var(--brand);
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.stats-box p {
+  color: var(--muted);
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+@media (max-width: 576px) {
+  .page-header {
+    padding: 130px 0 70px;
+  }
+
+  .page-header h1 {
+    font-size: 34px;
+  }
+}
+
