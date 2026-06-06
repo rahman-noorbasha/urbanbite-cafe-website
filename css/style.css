@@ -366,18 +366,37 @@ h2 {
   border-radius: 24px;
   overflow: hidden;
   height: 320px;
+  width: 100%;
   box-shadow: 0 10px 35px rgba(0,0,0,0.1);
+  background: #fff;
+  cursor: pointer;
 }
 
 .gallery-card img {
   width: 100%;
   height: 100%;
+  display: block;
   object-fit: cover;
-  transition: 0.4s;
+  object-position: center;
+  transition: 0.4s ease;
 }
 
 .gallery-card:hover img {
   transform: scale(1.08);
+}
+
+.gallery-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(232, 93, 4, 0.08);
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.gallery-card:hover::after {
+  opacity: 1;
 }
 
 .gallery-overlay {
@@ -387,7 +406,8 @@ h2 {
   width: 100%;
   padding: 28px;
   color: #fff;
-  background: linear-gradient(to top, rgba(0,0,0,0.78), rgba(0,0,0,0));
+  background: linear-gradient(to top, rgba(0,0,0,0.82), rgba(0,0,0,0));
+  z-index: 2;
 }
 
 .gallery-overlay h5 {
@@ -401,8 +421,10 @@ h2 {
 }
 
 .gallery-feature-img img {
-  min-height: 420px;
+  width: 100%;
+  height: 420px;
   object-fit: cover;
+  object-position: center;
 }
 
 .instagram-box {
@@ -431,9 +453,15 @@ h2 {
   margin: 0 auto 28px;
 }
 
+@media (max-width: 768px) {
+  .gallery-card {
+    height: 280px;
+  }
+}
+
 @media (max-width: 576px) {
   .gallery-card {
-    height: 260px;
+    height: 250px;
   }
 
   .instagram-box {
