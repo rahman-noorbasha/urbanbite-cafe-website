@@ -361,3 +361,82 @@ h2 {
     padding: 32px 24px;
   }
 }
+.gallery-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  height: 320px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.1);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 28px;
+  color: #fff;
+  background: linear-gradient(to top, rgba(0,0,0,0.78), rgba(0,0,0,0));
+}
+
+.gallery-overlay h5 {
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.gallery-overlay p {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.gallery-feature-img img {
+  min-height: 420px;
+  object-fit: cover;
+}
+
+.instagram-box {
+  background: linear-gradient(135deg, #fff7ed, #ffffff);
+  border-radius: 28px;
+  padding: 60px 30px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+}
+
+.instagram-box i {
+  width: 75px;
+  height: 75px;
+  background: var(--brand);
+  color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  margin-bottom: 22px;
+}
+
+.instagram-box p {
+  color: var(--muted);
+  max-width: 620px;
+  margin: 0 auto 28px;
+}
+
+@media (max-width: 576px) {
+  .gallery-card {
+    height: 260px;
+  }
+
+  .instagram-box {
+    padding: 45px 22px;
+  }
+}
