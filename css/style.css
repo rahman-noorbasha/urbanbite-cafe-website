@@ -312,4 +312,52 @@ h2 {
     font-size: 34px;
   }
 }
+.category-box {
+  background: #fff;
+  padding: 35px 20px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+  height: 100%;
+  transition: 0.3s;
+}
 
+.category-box:hover {
+  transform: translateY(-8px);
+}
+
+.category-box i {
+  width: 70px;
+  height: 70px;
+  background: var(--light);
+  color: var(--brand);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+
+.category-box h5 {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.offer-box {
+  background: linear-gradient(135deg, #fff7ed, #ffffff);
+  border-radius: 28px;
+  padding: 50px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+}
+
+.offer-box p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .offer-box {
+    padding: 32px 24px;
+  }
+}
